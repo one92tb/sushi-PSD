@@ -62,7 +62,7 @@ const BestSeller = () => (
         </Wrapper>
       );
     }}
-  ></StaticQuery>
+  />
 )
 
 

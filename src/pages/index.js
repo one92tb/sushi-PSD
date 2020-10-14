@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Layout from "../components/Layout/layout";
 import Intro from "../components/Intro/intro";
 import BestSeller from "../components/BestSeller/BestSeller";
+import BestTasty from "../components/BestTasty/bestTasty";
 
 const Container = styled.div`
   width: 100%;
@@ -18,7 +19,7 @@ class Home extends React.Component {
         <Container>
           <Intro />
           <BestSeller />
-
+          <BestTasty />
         </Container>
       </Layout>
     );

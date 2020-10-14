@@ -13,7 +13,7 @@ const Inner = styled.div `
   margin-right: auto;
 	padding: 0 240px;
 	box-sizing: border-box;
-		position: relative;
+	position: relative;
 `;
 
 const Title = styled.span `
@@ -26,10 +26,10 @@ const Title = styled.span `
 `;
 
 const Description = styled.span `
-		 display: block;
-		 text-align: center;
-		 font-size: 25px;
-		 padding-bottom: 77px;
+	 display: block;
+	 text-align: center;
+	 font-size: 25px;
+	 padding-bottom: 77px;
 `;
 
 const OurOffer = styled.div `
