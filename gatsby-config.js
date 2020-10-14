@@ -6,7 +6,14 @@
 
 module.exports = {
 	/* Your site config here */
+
 	plugins: [{
+		resolve: `gatsby-source-contentful`,
+		options: {
+			spaceId: `tf67omcacimj`,
+			accessToken: `ZphSH56Pv9Cp8LQ1pj-boD7srLvqIaCQVbIeCuivNWs`,
+		},
+	}, {
 		resolve: `gatsby-plugin-google-fonts`,
 		options: {
 			fonts: [

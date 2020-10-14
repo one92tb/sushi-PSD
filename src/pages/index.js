@@ -3,19 +3,13 @@ import styled from "styled-components";
 
 import Layout from "../components/Layout/layout";
 import Intro from "../components/Intro/intro";
-
-
-
+import BestSeller from "../components/BestSeller/BestSeller";
 
 const Container = styled.div`
   width: 100%;
-  max-width: 1440px;
   margin: 0;
   background: #999;
-  width: 100%;
-
 `
-
 
 class Home extends React.Component {
   render(){
@@ -23,6 +17,8 @@ class Home extends React.Component {
       <Layout>
         <Container>
           <Intro />
+          <BestSeller />
+
         </Container>
       </Layout>
     );
