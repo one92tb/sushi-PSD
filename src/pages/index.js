@@ -5,6 +5,7 @@ import Layout from "../components/Layout/layout";
 import Intro from "../components/Intro/intro";
 import BestSeller from "../components/BestSeller/BestSeller";
 import BestTasty from "../components/BestTasty/bestTasty";
+import Statistics from "../components/Statistics/statistics";
 
 const Container = styled.div`
   width: 100%;
@@ -20,6 +21,7 @@ class Home extends React.Component {
           <Intro />
           <BestSeller />
           <BestTasty />
+          <Statistics />
         </Container>
       </Layout>
     );

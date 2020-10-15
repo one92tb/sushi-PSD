@@ -29,8 +29,6 @@ const BestTasty = () => (
       }
     `}
     render={data => {
-      console.log(data);
-        //<Image src={...}/>
       return (
         <Wrapper>
           <Inner>
