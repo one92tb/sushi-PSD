@@ -1,11 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+import loadable from "@loadable/component"
 
 import Layout from "../components/Layout/layout";
-import Intro from "../components/Intro/intro";
-import BestSeller from "../components/BestSeller/BestSeller";
-import BestTasty from "../components/BestTasty/bestTasty";
-import Statistics from "../components/Statistics/statistics";
+
+const Intro = loadable(() => import("../components/Intro/intro"));
+const BestSeller = loadable(() => import("../components/BestSeller/bestSeller"));
+const BestTasty = loadable(() => import("../components/BestTasty/bestTasty"));
+const Statistics = loadable(() => import("../components/Statistics/statistics"));
 
 const Container = styled.div`
   width: 100%;
