@@ -35,6 +35,7 @@ const Description = styled.span `
 const OurOffer = styled.div `
 	display: flex;
 	justify-content: space-between;
+	  flex-wrap: wrap;
 `;
 
 const Card = styled.div `

@@ -81,6 +81,7 @@ const BodyText = styled.span `
   padding: 14.5px 0 39px 0;
   width: 590px;
   display: block;
+  word-wrap: break-word;
 `;
 
 const Button = styled.button `

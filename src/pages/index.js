@@ -8,6 +8,7 @@ const Intro = loadable(() => import("../components/Intro/intro"));
 const BestSeller = loadable(() => import("../components/BestSeller/bestSeller"));
 const BestTasty = loadable(() => import("../components/BestTasty/bestTasty"));
 const Statistics = loadable(() => import("../components/Statistics/statistics"));
+const Delicious = loadable(() => import("../components/Delicious/delicious"));
 
 const Container = styled.div`
   width: 100%;
@@ -24,6 +25,7 @@ class Home extends React.Component {
           <BestSeller />
           <BestTasty />
           <Statistics />
+          <Delicious />
         </Container>
       </Layout>
     );

@@ -7,7 +7,7 @@ const Wrapper = styled.div`
 
 const Inner = styled.div`
   max-width: 1440px;
-  padding: 146.5px 200px 132px 135px;
+  padding: 146.5px 200px 100px 135px;
   position: relative;
   margin: 0 auto;
 `;
@@ -33,6 +33,7 @@ const Description = styled.span`
 const Panel = styled.div`
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 `;
 
 const Card = styled.div`
@@ -41,6 +42,7 @@ const Card = styled.div`
   width: 275px;
   height: 275px;
   box-sizing: border-box;
+  margin-bottom: 32px;
 `;
 
 const Number = styled.span`

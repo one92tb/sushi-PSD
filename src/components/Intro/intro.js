@@ -46,7 +46,7 @@ const Intro = () => (
 				<Jumbotron>
 					<Title>delicious<br />  sushi</Title>
 					<BodyText>
-					Lorem ipsum dolor sit amet, consecte- <br /> tur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.
+					Lorem ipsum dolor sit amet, consecte&#173;tur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. 
 					</BodyText>
 					<Button>order now</Button>
 				</Jumbotron>

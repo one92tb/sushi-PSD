@@ -11,6 +11,8 @@ const Inner = styled.div `
   margin-right: auto;
   padding: 110px 98px 208px 130px;
   justify-content: space-between;
+  box-sizing: border-box;
+  flex-wrap: wrap;
 `;
 
 const Image = styled.img ``;
@@ -30,11 +32,12 @@ const Title = styled.span `
 
 const Description = styled.span `
   display: block;
-  width: 577px;
+  width: 576.65px;
   font-size: 29.72px;
   color: #ff7f7f;
   line-height: 1.2;
   padding-bottom: 63.25px;
+  word-wrap: break-word;
 `;
 
 const Button = styled.button `

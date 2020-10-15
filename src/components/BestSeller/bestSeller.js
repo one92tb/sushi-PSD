@@ -56,8 +56,8 @@ const BestSeller = () => (
                 </Card>
               ))}
             </OurOffer>
-            <VectorSmart1 src={'VectorSmart1.png'} />
-            <VectorSmart2 src={'VectorSmart2.png'} />
+            <VectorSmart1 src={'vectorSmart1.png'} />
+            <VectorSmart2 src={'vectorSmart2.png'} />
           </Inner>
         </Wrapper>
       );
