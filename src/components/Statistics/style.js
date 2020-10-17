@@ -28,6 +28,9 @@ const Description = styled.span`
   text-align: center;
   padding-top: 32.5px;
   padding-bottom: 87px;
+  max-width: 716.11px;
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 const Panel = styled.div`

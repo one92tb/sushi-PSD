@@ -32,7 +32,7 @@ const Title = styled.span `
 
 const Description = styled.span `
   display: block;
-  width: 576.65px;
+  max-width: 576.65px;
   font-size: 29.72px;
   color: #ff7f7f;
   line-height: 1.2;

@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
-const Container = styled.div `
-  font-weight: 700;
-  font-size: 25px;
+const Wrapper = styled.div `
   background-image: url('intro_background.png');
   background-position: center;
   background-repeat: no-repeat;
@@ -31,6 +29,7 @@ const Header = styled.div `
   padding: 15px 56px;
   justify-content: space-between;
   align-items: center;
+  font-size: 25px;
 `;
 
 const Logo = styled.div `
@@ -47,6 +46,7 @@ const Nav = styled.ul `
   justify-content: space-between;
   opacity: 1;
   z-index: 1;
+  font-weight: 700;
 `;
 
 const NavItem = styled.li `
@@ -79,7 +79,7 @@ const BodyText = styled.span `
   color: #fff;
   font-size: 30px;
   padding: 14.5px 0 39px 0;
-  width: 590px;
+  max-width: 590px;
   display: block;
   word-wrap: break-word;
 `;
@@ -97,7 +97,7 @@ const Button = styled.button `
 `;
 
 export {
-	Container,
+	Wrapper,
 	Inner,
 	Header,
 	Logo,

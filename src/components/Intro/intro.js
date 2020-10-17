@@ -1,6 +1,6 @@
 import React from "react";
 import {
-	Container,
+	Wrapper,
 	Inner,
 	BackgroundHeader,
 	Header,
@@ -17,7 +17,7 @@ import {
 } from "./style";
 
 const Intro = () => (
-			<Container>
+			<Wrapper>
 				<BackgroundHeader />
 				<Inner>
 					<Header>
@@ -46,12 +46,12 @@ const Intro = () => (
 				<Jumbotron>
 					<Title>delicious<br />  sushi</Title>
 					<BodyText>
-					Lorem ipsum dolor sit amet, consecte&#173;tur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. 
+					Lorem ipsum dolor sit amet, consecte&#173;tur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.
 					</BodyText>
 					<Button>order now</Button>
 				</Jumbotron>
 			</Inner>
-		</Container>
+		</Wrapper>
 	);
 
 export default Intro;

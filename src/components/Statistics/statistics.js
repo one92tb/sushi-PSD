@@ -39,7 +39,7 @@ const Statistics = () => (
             </Description>
             <Panel>
               {edges.sort((a,b) => a.node.order - b.node.order).map(edge =>
-                <Card>
+                <Card key={edge.node.name}>
                   <Number>{edge.node.value}</Number>
                   <Name>{edge.node.name}</Name>
                 </Card>
