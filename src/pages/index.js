@@ -10,6 +10,7 @@ const BestTasty = loadable(() => import("../components/BestTasty/bestTasty"));
 const Statistics = loadable(() => import("../components/Statistics/statistics"));
 const Delicious = loadable(() => import("../components/Delicious/delicious"));
 const Opinion = loadable(() => import("../components/Opinion/opinion"));
+const Subscribe = loadable(() => import("../components/Subscribe/subscribe"));
 
 const Container = styled.div`
   width: 100%;
@@ -28,6 +29,7 @@ class Home extends React.Component {
           <Statistics />
           <Delicious />
           <Opinion />
+          <Subscribe />
         </Container>
       </Layout>
     );
