@@ -7,7 +7,9 @@
 module.exports = {
 	/* Your site config here */
 
-	plugins: [{
+	plugins: [
+    `gatsby-plugin-fontawesome-css`,
+    {
 		resolve: `gatsby-source-contentful`,
 		options: {
 			spaceId: `tf67omcacimj`,
@@ -21,5 +23,6 @@ module.exports = {
 			],
 			display: 'swap'
 		}
-	}],
+	},
+],
 }
