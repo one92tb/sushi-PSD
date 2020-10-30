@@ -42,7 +42,7 @@ const Name = styled.span `
   padding-bottom: 206px;
 `;
 
-const ImageBox = styled.div`
+const ImageBox = styled.div `
   margin-left: auto;
   margin-right: auto;
   width: 241px;
@@ -52,10 +52,10 @@ const ImageBox = styled.div`
 `;
 
 export {
-	Wrapper,
-	Inner,
-	Image,
-	Description,
-	Name,
-	ImageBox
+  Wrapper,
+  Inner,
+  Image,
+  Description,
+  Name,
+  ImageBox
 };

@@ -1,18 +1,17 @@
 import styled from "styled-components";
 
-const Wrapper = styled.div`
+const Wrapper = styled.div `
   background: #fff;
-
 `;
 
-const Inner = styled.div`
+const Inner = styled.div `
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
 `;
 
-const Title = styled.span`
+const Title = styled.span `
   font-size: 58.33px;
   color: #ff7f7f;
   font-weight: bold;
@@ -23,7 +22,7 @@ const Title = styled.span`
   padding-bottom: 41.5px;
 `;
 
-const Description = styled.span`
+const Description = styled.span `
   font-size: 29.72px;
   color: #ff7f7f;
   max-width: 923.9px;
@@ -33,7 +32,7 @@ const Description = styled.span`
   line-height: 1.2;
 `;
 
-const Form = styled.form`
+const Form = styled.form `
   margin: 0 auto;
   position: relative;
   width: 770px;
@@ -43,7 +42,7 @@ const Form = styled.form`
   width: 770px;
 `;
 
-const Input = styled.input`
+const Input = styled.input `
   width: 659px;
   height: 63px;
   background: #f4f4f4;
@@ -55,7 +54,7 @@ const Input = styled.input`
   box-sizing: border-box;
 `;
 
-const Button = styled.button`
+const Button = styled.button `
   border-radius: 32.5px;
   background: #ff7f7f;
   color: #fff;
@@ -73,22 +72,25 @@ const Button = styled.button`
   }
 `;
 
-const VectorSmart2 = styled.img`
+const VectorSmart2 = styled.img `
   position: absolute;
   top: 34px;
   right: 174px;
 `;
-const VectorSmart3 = styled.img`
+
+const VectorSmart3 = styled.img `
   position: absolute;
   bottom: 85px;
   left: 437px;
 `;
-const VectorSmart4 = styled.img`
+
+const VectorSmart4 = styled.img `
   position: absolute;
   top: 91px;
   left: 73px;
 `;
-const VectorSmart5 = styled.img`
+
+const VectorSmart5 = styled.img `
   position: absolute;
   bottom: -61px;
   right: 174px;

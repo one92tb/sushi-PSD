@@ -4,21 +4,21 @@ import {
   Wrapper,
   Inner,
   Image,
-  Card,
-  Title,
   Description,
-  Button
-} from "./style";
+  Name,
+  ImageBox
+} from "./style.js"
 
-const BestTasty = () => (
+const Opinion = () => (
   <StaticQuery
     query={graphql`
       {
-        contentfulBestTasty {
-          title
+        contentfulOpinion {
+          name
           description
           image {
             id
+            title
             file {
               url
               fileName
@@ -32,17 +32,16 @@ const BestTasty = () => (
       return (
         <Wrapper>
           <Inner>
-            <Image src={data.contentfulBestTasty.image.file.url} width={475} height={482}/>
-            <Card>
-              <Title>{data.contentfulBestTasty.title}</Title>
-              <Description>{data.contentfulBestTasty.description}</Description>
-              <Button>order now</Button>
-            </Card>
+            <ImageBox>
+              <Image src={data.contentfulOpinion.image.file.url} />
+            </ImageBox>
+            <Description>{data.contentfulOpinion.description}</Description>
+            <Name>{data.contentfulOpinion.name}</Name>
           </Inner>
         </Wrapper>
-      )
+      );
     }}
   />
-)
+);
 
-export default BestTasty;
+export default Opinion;

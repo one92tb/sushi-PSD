@@ -13,13 +13,13 @@ import {
   Nav,
   NavItem,
   NavLink,
-} from "./style";
+} from "./style.js";
 import {
   faInstagram,
   faFacebookF,
   faTwitter,
   faWhatsapp
- } from '@fortawesome/free-brands-svg-icons';
+} from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => (
   <Wrapper>
@@ -27,43 +27,43 @@ const Footer = () => (
       <SocialMedia>
         <Title>Title Here</Title>
         <Description>
-        Lorem ipsum dolor sit amet, consecte&#173;tur adipiscing elit. Aliquam at dignissim nunc, id maximus ex. Etiam nec dignissim elit, at dignissim enim.
+          Lorem ipsum dolor sit amet, consecte&#173;tur adipiscing elit. Aliquam at dignissim nunc, id maximus ex. Etiam nec dignissim elit, at dignissim enim.
         </Description>
         <Panel>
           <IconBox>
-            <Icon icon = {faInstagram} />
+            <Icon icon={faInstagram} />
           </IconBox>
           <IconBox>
-            <Icon icon = {faFacebookF} />
+            <Icon icon={faFacebookF} />
           </IconBox>
           <IconBox>
-            <Icon icon = {faTwitter} />
+            <Icon icon={faTwitter} />
           </IconBox>
           <IconBox>
-            <Icon icon = {faWhatsapp} />
+            <Icon icon={faWhatsapp} />
           </IconBox>
         </Panel>
       </SocialMedia>
       <Information>
         <Card>
-            <Title>About</Title>
-            <Nav>
-              <NavItem>
-                <NavLink>History</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink>Our Team</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink>Brand Guidelines</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink>Terms & Condition</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink>Privacy Policy</NavLink>
-              </NavItem>
-            </Nav>
+          <Title>About</Title>
+          <Nav>
+            <NavItem>
+              <NavLink>History</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink>Our Team</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink>Brand Guidelines</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink>Terms & Condition</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink>Privacy Policy</NavLink>
+            </NavItem>
+          </Nav>
         </Card>
         <Card>
           <Title>Services</Title>

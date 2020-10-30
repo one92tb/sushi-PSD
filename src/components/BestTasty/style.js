@@ -53,11 +53,11 @@ const Button = styled.button `
 `;
 
 export {
-	Wrapper,
-	Inner,
-	Image,
-	Card,
-	Title,
-	Description,
-	Button
+  Wrapper,
+  Inner,
+  Image,
+  Card,
+  Title,
+  Description,
+  Button
 };

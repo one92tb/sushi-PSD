@@ -16,7 +16,6 @@ const Footer = loadable(() => import("../components/Footer/footer"));
 const Container = styled.div`
   width: 100%;
   margin: 0;
-  background: #999;
 `
 
 class Home extends React.Component {

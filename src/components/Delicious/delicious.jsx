@@ -12,7 +12,7 @@ import {
   VectorSmart2,
   VectorSmart5,
   VectorSmart6
-} from './style';
+} from './style.js';
 
 const Delicious = () => (
   <StaticQuery

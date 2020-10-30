@@ -11,7 +11,7 @@ import {
   Name,
   VectorSmart3,
   VectorSmart4
-} from './style';
+} from './style.js';
 
 const Statistics = () => (
   <StaticQuery
@@ -35,10 +35,10 @@ const Statistics = () => (
           <Inner>
             <Title>statistics</Title>
             <Description>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br /> Vivamus lacinia odio vitae vestibulum vestibulum.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br /> Vivamus lacinia odio vitae vestibulum vestibulum.
             </Description>
             <Panel>
-              {edges.sort((a,b) => a.node.order - b.node.order).map(edge =>
+              {edges.sort((a, b) => a.node.order - b.node.order).map(edge =>
                 <Card key={edge.node.name}>
                   <Number>{edge.node.value}</Number>
                   <Name>{edge.node.name}</Name>

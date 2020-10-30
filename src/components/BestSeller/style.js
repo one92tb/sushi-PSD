@@ -1,16 +1,15 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div `
-	background: #ff7f7f;
+	background: #fff;
 	color: #fff;
-
 	width: 100%;
 `;
 
 const Inner = styled.div `
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
+	max-width: 1440px;
+	margin-left: auto;
+	margin-right: auto;
 	padding: 0 240px;
 	box-sizing: border-box;
 	position: relative;
@@ -43,7 +42,7 @@ const Card = styled.div `
 `;
 
 const Image = styled.img `
-display: block;
+	display: block;
 	margin-left: auto;
 	margin-right: auto;
 `;
@@ -63,13 +62,13 @@ const Text = styled.span `
 	padding-bottom: 22.75px;
 `;
 
-const VectorSmart1 = styled.img`
+const VectorSmart1 = styled.img `
 	position: absolute;
 	top: 458px;
 	left: 0;
 `;
 
-const VectorSmart2 = styled.img`
+const VectorSmart2 = styled.img `
 	position: absolute;
 	top: 349px;
 	right: 59px;

@@ -1,5 +1,7 @@
 import styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  FontAwesomeIcon
+} from '@fortawesome/react-fontawesome';
 
 const Wrapper = styled.div `
   color: #fff;
@@ -93,17 +95,17 @@ const NavLink = styled.a `
 
 
 export {
-	Wrapper,
-	Inner,
-	SocialMedia,
-	Title,
-	Description,
-	Panel,
-	IconBox,
-	Icon,
-	Card,
-	Information,
-	Nav,
-	NavItem,
-	NavLink,
+  Wrapper,
+  Inner,
+  SocialMedia,
+  Title,
+  Description,
+  Panel,
+  IconBox,
+  Icon,
+  Card,
+  Information,
+  Nav,
+  NavItem,
+  NavLink,
 };

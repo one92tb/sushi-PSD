@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
-const Wrapper = styled.div`
+const Wrapper = styled.div `
   background:#fff;
 `;
 
-const Inner = styled.div`
+const Inner = styled.div `
   display: flex;
   max-width: 1440px;
   margin-left: auto;
@@ -15,11 +15,11 @@ const Inner = styled.div`
   position: relative;
 `;
 
-const Image = styled.img``;
+const Image = styled.img ``;
 
-const Card = styled.div``;
+const Card = styled.div ``;
 
-const Title = styled.span`
+const Title = styled.span `
   display: block;
   font-size: 58.33px;
   font-weight: bold;
@@ -29,7 +29,7 @@ const Title = styled.span`
   padding-bottom: 41.25px;
 `;
 
-const Description = styled.span`
+const Description = styled.span `
   display: block;
   max-width: 576.65px;
   font-size: 29.72px;
@@ -52,25 +52,25 @@ const Button = styled.button `
   margin-bottom: 65px;
 `;
 
-const VectorSmart1 = styled.img`
+const VectorSmart1 = styled.img `
   position: absolute;
   bottom: 89px;
   left: 654px;
 `;
 
-const VectorSmart2 = styled.img`
+const VectorSmart2 = styled.img `
   position: absolute;
   right: 490px;
   top: -74px;
 `;
 
-const VectorSmart5 = styled.img`
+const VectorSmart5 = styled.img `
   position: absolute;
   right: 36px;
   top: 93px;
 `;
 
-const VectorSmart6 = styled.img`
+const VectorSmart6 = styled.img `
   position: absolute;
   left: 120px;
   top: 41px;
