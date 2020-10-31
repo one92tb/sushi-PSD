@@ -15,7 +15,7 @@ import {
 	BodyText,
 	Button,
 	Shape,
-} from "./style.JS";
+} from "./style.js";
 
 const Intro = () => (
 	<Wrapper>
