@@ -1,10 +1,8 @@
 import styled from "styled-components";
 
-
 const Shape = styled.div `
-  background: url('shapeIntro.png') rgba(255,127,127) no-repeat;
+  background: url('shape.png');
   background-position: bottom;
- 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -15,9 +13,12 @@ const Shape = styled.div `
   top:0;
   left:0;
   z-index: 0;
-  background-blend-mode: multiply;
-  transition: height 2s;
+  transition: height 1s;
   -webkit-mask-repeat: no-repeat;
+
+  @media only screen and (min-width: 2700px) {
+    background: url('shape_BIG.png');
+  }
 `;
 
 const Wrapper = styled.div `
@@ -31,30 +32,24 @@ const Wrapper = styled.div `
   width: 100%;
   position: relative;
   pointer-events: none; 
-
   &:hover {
     ${Shape} {
-      height: 100%;
-
+      height: 1105px;
       @media only screen and (min-width: 1700px) {
         height: 1180px;
       }
-
       @media only screen and (min-width: 2100px) {
         height: 1210px;
       }
       @media only screen and (min-width: 2300px) {
-        height: 1230px;
+        height: 1290px;
       }
-
       @media only screen and (min-width: 2700px) {
         height: 796px;
-        background-position: top;
       }
     }
   }
 `;
-
 const Inner = styled.div `
   max-width: 1440px;
   margin-left: auto;
@@ -187,3 +182,4 @@ export {
   BackgroundHeader,
   Shape,
 };
+
