@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import loadable from "@loadable/component"
-
+import loadable from "@loadable/component";
 import Layout from "../components/Layout/layout";
 
 const Intro = loadable(() => import("../components/Intro/intro"));

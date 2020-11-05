@@ -31,7 +31,16 @@ const Wrapper = styled.div `
   background-size: cover;
   width: 100%;
   position: relative;
+`;
+
+const Inner = styled.div `
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 5;
+  padding-top: 129px;
   pointer-events: none; 
+
   &:hover {
     ${Shape} {
       height: 1105px;
@@ -50,70 +59,6 @@ const Wrapper = styled.div `
     }
   }
 `;
-const Inner = styled.div `
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 5;
-
-`;
-
-const BackgroundHeader = styled.div `
-  position: absolute;
-  height: 129px;
-  background-color: rgba(255, 127, 127, 0.75);
-  top: 0;
-  width: 100%;
-  z-index: 1;
-`;
-
-const Header = styled.div `
-  height: 99px;
-  color: #fff;
-  display: flex;
-  padding: 15px 56px;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 25px;
-`;
-
-const Logo = styled.div `
-  z-index: 1;
-`;
-
-const Image = styled.img ``;
-
-const Nav = styled.ul `
-  margin: 0;
-  display: flex;
-  width: 737px;
-  display: flex;
-  justify-content: space-between;
-  opacity: 1;
-  z-index: 1;
-  font-weight: 700;
-`;
-
-
-const NavItem = styled.li `
-  list-style-type: none;
-`;
-
-const NavLink = styled.a `
-  text-transform: uppercase;
-
-  &:hover {
-    cursor: pointer;
-  }
-`;
-
-const SearchIcon = styled.img `
-  z-index: 1;
-
-  &:hover {
-    cursor: pointer;
-  }
-`;
 
 const Jumbotron = styled.div `
   padding-top: 120.5px;
@@ -130,9 +75,11 @@ const Title = styled.span `
   z-index: 1;
   display: block;
   position: relative;
+
+  @media only screen and (max-width: 1200px) {
+    z-index: 0;
+  }
 `;
-
-
 
 const BodyText = styled.span `
   color: #fff;
@@ -143,8 +90,11 @@ const BodyText = styled.span `
   word-wrap: break-word;
   z-index: 1;
   position: relative;
-`;
 
+  @media only screen and (max-width: 1200px) {
+    z-index: 0;
+  }
+`;
 
 const Button = styled.button `
   text-transform: uppercase;
@@ -168,18 +118,10 @@ const Button = styled.button `
 export {
   Wrapper,
   Inner,
-  Header,
-  Logo,
-  Image,
-  Nav,
-  NavItem,
-  NavLink,
-  SearchIcon,
   Jumbotron,
   Title,
   BodyText,
   Button,
-  BackgroundHeader,
   Shape,
 };
 
