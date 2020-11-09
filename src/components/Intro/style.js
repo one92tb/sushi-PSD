@@ -1,5 +1,27 @@
 import styled from "styled-components";
 
+const Wrapper = styled.div `
+  background-image: url('intro_background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  font-size: 25px;
+
+  @media only screen and (max-width : 320px) {
+    font-size: 10px;
+  }
+
+  @media only screen and (max-width : 768px) {
+    font-size: 15px;
+  }
+
+`;
+
 const Shape = styled.div `
   background: url('shape.png');
   background-position: bottom;
@@ -19,18 +41,11 @@ const Shape = styled.div `
   @media only screen and (min-width: 2700px) {
     background: url('shape_BIG.png');
   }
-`;
 
-const Wrapper = styled.div `
-  background-image: url('intro_background.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  width: 100%;
-  position: relative;
+  @media only screen and (max-width : 768px) {
+    background: url('shape_BIG.png');
+    background-position: center;
+  }
 `;
 
 const Inner = styled.div `
@@ -44,6 +59,11 @@ const Inner = styled.div `
   &:hover {
     ${Shape} {
       height: 1105px;
+
+      @media only screen and (max-width : 768px) {
+        height: 100%;
+      }
+
       @media only screen and (min-width: 1700px) {
         height: 1180px;
       }
@@ -64,32 +84,44 @@ const Jumbotron = styled.div `
   padding-top: 120.5px;
   padding-left: 96px;
   padding-bottom: 133px;
-  z-index: 5;
+  z-index: 1;
+
+  @media only screen and (max-width : 768px) {
+    padding-top: 72.3px;
+    padding-left: 57.6px;
+    padding-bottom: 79.8px;
+  }
+
+  @media only screen and (max-width : 320px) {
+    padding-top: 48.2px;
+    padding-left: 38.4px;
+    padding-bottom: 53.2px;
+  }
 `;
 
-const Title = styled.span `
-  font-size: 75px;
+const Title = styled.p `
+  font-size: 3em;
   color:#fff;
   text-transform: uppercase;
   font-weight: 700;
-  z-index: 1;
   display: block;
   position: relative;
+  margin: 0;
 
   @media only screen and (max-width: 1200px) {
     z-index: 0;
   }
 `;
 
-const BodyText = styled.span `
+const BodyText = styled.p `
   color: #fff;
-  font-size: 30px;
+  font-size: 1.2em;
   padding: 14.5px 0 39px 0;
-  max-width: 590px;
+  max-width: 580px;
   display: block;
   word-wrap: break-word;
-  z-index: 1;
   position: relative;
+  margin: 0;
 
   @media only screen and (max-width: 1200px) {
     z-index: 0;
@@ -98,7 +130,7 @@ const BodyText = styled.span `
 
 const Button = styled.button `
   text-transform: uppercase;
-  font-size: 28px;
+  font-size: 1em;
   width: 322px;
   height: 65px;
   border-radius: 32.5px;
@@ -106,13 +138,26 @@ const Button = styled.button `
   background: #fff;
   border: none;
   font-weight: 700;
-  z-index: 1;
   position: relative;
   pointer-events: auto;
 
   &:hover {
     cursor: pointer;
   }
+
+  
+  @media only screen and (max-width : 768px) {
+    width: 193.2px;
+    height: 39px;
+    border-radius: 19.5px;
+  }
+
+  @media only screen and (max-width : 320px) {
+    width: 128.8px;
+    height: 26px;
+    border-radius: 13.5px;
+  }
+
 `;
 
 export {

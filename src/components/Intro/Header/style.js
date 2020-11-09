@@ -1,23 +1,31 @@
 import styled, {
-    css
+  css
 } from "styled-components";
 
 const Wrapper = styled.div `
-height: 99px;
-color: #fff;
-display: flex;
-justify-content: center;
-font-size: 25px;
-position absolute;
-background-color: rgba(255, 127, 127, 0.75);
-width: 100%;
-padding: 15px 0;
-z-index: 1;
-transition: background-color 1s;
+  height: 99px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  position absolute;
+  background-color: rgba(255, 127, 127, 0.75);
+  width: 100%;
+  padding: 15px 0;
+  z-index: 1;
+  transition: background-color 1s;
 
-@media only screen and (max-width: 1200px) {
-  background-color: ${props => props.isChecked && "rgba(255, 127, 127, 1)"};
-}
+
+  @media only screen and (max-width: 320px) {
+    height: 39.6px;
+  };
+
+  @media only screen and (max-width: 768px) {
+    height: 77.4px;
+  };
+
+  @media only screen and (max-width: 1200px) {
+    background-color: ${props => props.isChecked && "rgba(255, 127, 127, 1)"};
+  };
 `;
 
 const Inner = styled.div `
@@ -32,7 +40,7 @@ const Inner = styled.div `
 
  @media only screen and (max-width: 1200px) {
   padding: 0;
-}
+ };
 `;
 
 const Logo = styled.div `
@@ -40,10 +48,23 @@ const Logo = styled.div `
 
   @media only screen and (max-width: 1200px) {
     padding-left: 15px;
-  }
+  };
 `;
 
-const Image = styled.img ``;
+const Image = styled.img `
+  width: 107px;
+  height: 83px;
+
+  @media only screen and (max-width: 320px) {
+    width: 42.8px;
+    height: 33.2px;
+  };
+
+  @media only screen and (max-width: 768px) {
+    width: 64.2px;
+    height: 49.8px;
+  };
+`;
 
 const ToggleStyle = css `
   width: 100%;
@@ -74,10 +95,16 @@ const Nav = styled.ul `
     z-index: 5;
     flex-direction: column;
     text-align: center;
-    font-size: 55px;
     padding: 0;
     opacity: ${props => props.isChecked ? "1" : "0" };
     max-height: ${props => props.isChecked ? "435px" : "0"};
+  }
+
+  @media only screen and (max-width: 320px) {
+    top: 69.594px;
+  }
+  @media only screen and (max-width: 1200px) {
+    top: 107.4px;
   }
 `;
 
@@ -88,6 +115,7 @@ const NavItem = styled.li `
 
 const NavLink = styled.a `
   text-transform: uppercase;
+  font-size: 1em;
 
   &:hover {
     cursor: pointer;
@@ -121,7 +149,7 @@ const ToggleThree = styled.div `
       props.isChecked && "rotate(-45deg) translate(8px, -8px)"}
 `
 const Input = styled.input `
- display: none;
+  display: none;
 `
 
 const Label = styled.label `
@@ -142,17 +170,17 @@ const Label = styled.label `
 `
 
 export {
-    Wrapper,
-    Inner,
-    Logo,
-    Image,
-    Label,
-    ToggleOne,
-    ToggleTwo,
-    ToggleThree,
-    Input,
-    Nav,
-    NavItem,
-    NavLink,
-    SearchIcon
+  Wrapper,
+  Inner,
+  Logo,
+  Image,
+  Label,
+  ToggleOne,
+  ToggleTwo,
+  ToggleThree,
+  Input,
+  Nav,
+  NavItem,
+  NavLink,
+  SearchIcon
 }

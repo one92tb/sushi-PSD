@@ -23,13 +23,7 @@ class Home extends React.Component {
       <Layout>
         <Container>
           <Intro />
-          <BestSeller />
-          <BestTasty />
-          <Statistics />
-          <Delicious />
-          <Opinion />
-          <Subscribe />
-          <Footer />
+ 
         </Container>
       </Layout>
     );
@@ -37,3 +31,13 @@ class Home extends React.Component {
 }
 
 export default Home;
+
+/*
+          <BestSeller />
+          <BestTasty />
+          <Statistics />
+          <Delicious />
+          <Opinion />
+          <Subscribe />
+          <Footer />
+*/

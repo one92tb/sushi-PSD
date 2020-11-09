@@ -22,7 +22,7 @@ const Header = () => {
         <Wrapper isChecked={isChecked}>
             <Inner>
                 <Logo>
-                    <Image src={'sushi_icon.png'} width={107} height={83} />
+                    <Image src={'sushi_icon.png'} />
                 </Logo>
                 <Label htmlFor="toggle" onClick={() => setChecked(!isChecked)} >
                     <ToggleOne isChecked={isChecked} />
