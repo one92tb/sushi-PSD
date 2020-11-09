@@ -23,7 +23,7 @@ class Home extends React.Component {
       <Layout>
         <Container>
           <Intro />
- 
+          <BestSeller />
         </Container>
       </Layout>
     );

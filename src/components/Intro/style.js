@@ -16,10 +16,9 @@ const Wrapper = styled.div `
     font-size: 10px;
   }
 
-  @media only screen and (max-width : 768px) {
+  @media only screen and (min-width : 321px) and (max-width : 768px) {
     font-size: 15px;
   }
-
 `;
 
 const Shape = styled.div `
@@ -38,13 +37,13 @@ const Shape = styled.div `
   transition: height 1s;
   -webkit-mask-repeat: no-repeat;
 
-  @media only screen and (min-width: 2700px) {
-    background: url('shape_BIG.png');
-  }
-
   @media only screen and (max-width : 768px) {
     background: url('shape_BIG.png');
     background-position: center;
+  }
+
+  @media only screen and (min-width: 2700px) {
+    background: url('shape_BIG.png');
   }
 `;
 
@@ -64,13 +63,13 @@ const Inner = styled.div `
         height: 100%;
       }
 
-      @media only screen and (min-width: 1700px) {
+      @media only screen and (min-width: 1700px) and (max-width: 2099px) {
         height: 1180px;
       }
-      @media only screen and (min-width: 2100px) {
+      @media only screen and (min-width: 2100px) and (max-width:2299px) {
         height: 1210px;
       }
-      @media only screen and (min-width: 2300px) {
+      @media only screen and (min-width: 2300px) and (max-width: 2699px) {
         height: 1290px;
       }
       @media only screen and (min-width: 2700px) {
@@ -86,16 +85,12 @@ const Jumbotron = styled.div `
   padding-bottom: 133px;
   z-index: 1;
 
-  @media only screen and (max-width : 768px) {
-    padding-top: 72.3px;
-    padding-left: 57.6px;
-    padding-bottom: 79.8px;
+  @media only screen and (max-width : 320px) {
+    padding: 48.2px 15px 53.2px 15px;
   }
 
-  @media only screen and (max-width : 320px) {
-    padding-top: 48.2px;
-    padding-left: 38.4px;
-    padding-bottom: 53.2px;
+  @media only screen and (min-width:321px) and (max-width : 768px) {
+    padding: 72.3px 15px 79.8px 15px;
   }
 `;
 
@@ -108,9 +103,7 @@ const Title = styled.p `
   position: relative;
   margin: 0;
 
-  @media only screen and (max-width: 1200px) {
-    z-index: 0;
-  }
+
 `;
 
 const BodyText = styled.p `
@@ -145,19 +138,17 @@ const Button = styled.button `
     cursor: pointer;
   }
 
-  
-  @media only screen and (max-width : 768px) {
-    width: 193.2px;
-    height: 39px;
-    border-radius: 19.5px;
-  }
-
-  @media only screen and (max-width : 320px) {
+  @media only screen and (max-width : 320px){
     width: 128.8px;
     height: 26px;
     border-radius: 13.5px;
   }
 
+  @media only screen and (min-width: 321px) and (max-width : 768px) {
+    width: 193.2px;
+    height: 39px;
+    border-radius: 19.5px;
+  }
 `;
 
 export {
