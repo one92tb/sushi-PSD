@@ -22,7 +22,7 @@ const Wrapper = styled.div `
 `;
 
 const Shape = styled.div `
-  background: url('shape.png');
+  background: url('shape.png') no-repeat;
   background-position: bottom;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -42,8 +42,9 @@ const Shape = styled.div `
     background-position: center;
   }
 
-  @media only screen and (min-width: 2700px) {
-    background: url('shape_BIG.png');
+  @media only screen and (min-width: 2350px) {
+    background: url('shape_BIG.png') no-repeat;
+    background-size: cover;
   }
 `;
 
@@ -66,13 +67,10 @@ const Inner = styled.div `
       @media only screen and (min-width: 1700px) and (max-width: 2099px) {
         height: 1180px;
       }
-      @media only screen and (min-width: 2100px) and (max-width:2299px) {
-        height: 1210px;
+      @media only screen and (min-width: 2100px) and (max-width:2349px) {
+        height: 1225px;
       }
-      @media only screen and (min-width: 2300px) and (max-width: 2699px) {
-        height: 1290px;
-      }
-      @media only screen and (min-width: 2700px) {
+      @media only screen and (min-width: 2350px) {
         height: 796px;
       }
     }

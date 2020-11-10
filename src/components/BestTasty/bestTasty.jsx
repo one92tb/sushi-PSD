@@ -7,7 +7,8 @@ import {
   Card,
   Title,
   Description,
-  Button
+  Button,
+  Shape
 } from "./style.js";
 
 const BestTasty = () => (
@@ -39,10 +40,11 @@ const BestTasty = () => (
               <Button>order now</Button>
             </Card>
           </Inner>
-        </Wrapper>
+          <Shape src={"bestTastyShape.png"} />
+        </Wrapper >
       )
     }}
-  />
+/>
 )
 
 export default BestTasty;

@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const Wrapper = styled.div `
   background:#fff;
+  position: relative;
 `;
 
 const Inner = styled.div `
@@ -52,6 +53,12 @@ const Button = styled.button `
   background: #ff7f7f;
 `;
 
+const Shape = styled.img `
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+`;
+
 export {
   Wrapper,
   Inner,
@@ -59,5 +66,6 @@ export {
   Card,
   Title,
   Description,
-  Button
+  Button,
+  Shape
 };
