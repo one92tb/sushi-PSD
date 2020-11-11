@@ -136,7 +136,7 @@ const VectorSmart1 = styled.img `
 	top: 458px;
 	left: 0;
 
-	@media only screen and (max-width : 768px) {
+	@media only screen and (max-width : 1200px) {
 		display: none;
 	}
 `;
@@ -146,7 +146,7 @@ const VectorSmart2 = styled.img `
 	top: 349px;
 	right: 59px;
 
-	@media only screen and (max-width : 768px) {
+	@media only screen and (max-width : 1200px) {
 		display: none;
 	}
 `;
