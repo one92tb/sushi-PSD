@@ -44,19 +44,19 @@ const Description = styled.p `
   color: #fff;
   text-align: center;
   padding-top: 32.5px;
-  padding-bottom: 87px;
+  padding-bottom: 85px;
   max-width: 716.11px;
   margin-left: auto;
   margin-right: auto;
 
   @media only screen and (max-width : 320px) {
     padding-top: 16.25px;
-    padding-bottom: 43.5px;
+    padding-bottom: 42.5px;
 	}
 
 	@media only screen and (min-width: 321px) and (max-width : 768px) {
     padding-bottom: 19.5px;
-    padding-bottom: 52.2px;
+    padding-bottom: 51px;
 
 	}
 `;

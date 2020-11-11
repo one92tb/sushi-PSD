@@ -16,10 +16,8 @@ const Wrapper = styled.div `
 const Inner = styled.div `
   display: flex;
   max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
   justify-content: space-between;
-  padding: 179px 125px 139px 125px;
+  padding: 171px 125px 165px 125px;
   flex-wrap: wrap;
   position: relative;
 
@@ -27,22 +25,20 @@ const Inner = styled.div `
     justify-content: center;
     padding: 30px 15px 30px 15px;
   }
-
-
 `;
 
 const Image = styled.img `
-  width: 475px;
-  height: 482px;
+  width: 465px;
+  height: 464px;
 
   @media only screen and (max-width: 320px) {
-    width: 237.5px;
-    height: 241px;
+    width: 232.5px;
+    height: 232px;
   }
 
   @media only screen and (min-width: 321px) and (max-width: 768px){
-    width: 285px;
-    height: 289.2px;
+    width: 279px;
+    height: 278.4px;
   }
 `;
 
@@ -54,8 +50,8 @@ const Title = styled.p `
   font-weight: bold;
   color: #ff7f7f;
   text-transform: uppercase;
-  padding-top: 72px;
-  padding-bottom: 41.25px;
+  padding-top: 57px;
+  padding-bottom: 38px;
 
   @media only screen and (max-width: 320px) {
     padding-top: 36px;
@@ -72,20 +68,20 @@ const Title = styled.p `
 
 const Description = styled.p `
   margin: 0;
-  max-width: 576.65px;
+  max-width: 600px;
   font-size: 3em;
   color: #ff7f7f;
   line-height: 1.2;
   word-wrap: break-word;
-  padding-bottom: 62.75px;
+  padding-bottom: 66px;
 
   @media only screen and (max-width: 320px) {
-    padding-bottom: 31.375px;
+    padding-bottom: 33px;
     text-align: center;
   }
 
   @media only screen and (min-width: 321px) and (max-width: 768px){
-    padding-bottom: 37.65px;
+    padding-bottom: 39.6px;
     text-align: center;
   }
 `;
@@ -101,7 +97,7 @@ const Button = styled.button `
   border: none;
   color: #fff;
   background: #ff7f7f;
-  margin-bottom: 65px;
+  margin-bottom: 59px;
 
   &:hover {
     cursor: pointer;
@@ -111,14 +107,14 @@ const Button = styled.button `
     width: 161px;
     height: 32.5px;
     border-radius: 16.25px;
-    margin: 0 auto 32.5 auto;
+    margin: 0 auto 29.5px auto;
   }
 
   @media only screen and (min-width: 321px) and (max-width: 768px){
     width: 193.2px;
     height: 39px;
     border-radius: 19.5px;
-    margin: 0 auto 39px auto;
+    margin: 0 auto 35.4px auto;
   }
 `;
 
