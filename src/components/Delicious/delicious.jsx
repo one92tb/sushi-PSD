@@ -42,7 +42,7 @@ const Delicious = () => (
               <Description>{data.contentfulDelicious.description}</Description>
               <Button>order now</Button>
             </Card>
-            <Image src={data.contentfulDelicious.image.file.url} width={475} height={482} />
+            <Image src={data.contentfulDelicious.image.file.url} />
             <VectorSmart1 src={'vectorSmart1.png'} />
             <VectorSmart2 src={'vectorSmart2.png'} />
             <VectorSmart5 src={'vectorSmart5.png'} />

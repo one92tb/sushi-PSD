@@ -26,6 +26,7 @@ class Home extends React.Component {
           <BestSeller />
           <BestTasty />
           <Statistics />
+          <Delicious />
         </Container>
       </Layout>
     );
