@@ -94,8 +94,8 @@ const Image = styled.img `
 	height: 213px; 
 
 	@media only screen and (max-width: 320px) {
-		width: 127.8px;
-		height: 127.8px; 
+		width: 106.5px;
+		height: 106.5px; 
 	}
 
 	@media only screen and (min-width: 321px) and (max-width: 768px) {

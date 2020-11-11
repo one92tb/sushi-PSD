@@ -56,11 +56,11 @@ const Image = styled.img `
   height: 83px;
 
   @media only screen and (max-width: 320px) {
-    width: 42.8px;
-    height: 33.2px;
+    width: 53.5px;
+    height: 41.5px;
   };
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (min-width: 321px) and (max-width: 768px) {
     width: 64.2px;
     height: 49.8px;
   };
@@ -100,11 +100,8 @@ const Nav = styled.ul `
     max-height: ${props => props.isChecked ? "435px" : "0"};
   }
 
-  @media only screen and (max-width: 320px) {
-    top: 69.594px;
-  }
   @media only screen and (max-width: 1200px) {
-    top: 107.4px;
+    top: 107.39px;
   }
 `;
 

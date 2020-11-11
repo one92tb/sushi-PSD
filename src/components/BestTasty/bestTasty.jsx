@@ -33,18 +33,20 @@ const BestTasty = () => (
       return (
         <Wrapper>
           <Inner>
-            <Image src={data.contentfulBestTasty.image.file.url} width={475} height={482} />
+            <Image src={data.contentfulBestTasty.image.file.url} />
             <Card>
               <Title>{data.contentfulBestTasty.title}</Title>
               <Description>{data.contentfulBestTasty.description}</Description>
               <Button>order now</Button>
             </Card>
           </Inner>
-          <Shape src={"bestTastyShape.png"} />
+          <Shape src="bestTastyShape.png"/>
         </Wrapper >
       )
     }}
-/>
+  />
 )
 
 export default BestTasty;
+
+//  <Shape src="bestTastyShape.png"/>

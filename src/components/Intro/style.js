@@ -13,7 +13,7 @@ const Wrapper = styled.div `
   font-size: 25px;
 
   @media only screen and (max-width : 320px) {
-    font-size: 10px;
+    font-size: 12.5px;
   }
 
   @media only screen and (min-width : 321px) and (max-width : 768px) {
@@ -84,7 +84,7 @@ const Jumbotron = styled.div `
   z-index: 1;
 
   @media only screen and (max-width : 320px) {
-    padding: 48.2px 15px 53.2px 15px;
+    padding: 60.25px 15px 66.5px 15px;
   }
 
   @media only screen and (min-width:321px) and (max-width : 768px) {
@@ -137,9 +137,9 @@ const Button = styled.button `
   }
 
   @media only screen and (max-width : 320px){
-    width: 128.8px;
-    height: 26px;
-    border-radius: 13.5px;
+    width: 166px;
+    height: 32.5px;
+    border-radius: 16.25px;
   }
 
   @media only screen and (min-width: 321px) and (max-width : 768px) {
