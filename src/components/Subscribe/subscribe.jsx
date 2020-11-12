@@ -10,7 +10,8 @@ import {
   VectorSmart2,
   VectorSmart3,
   VectorSmart4,
-  VectorSmart5
+  VectorSmart5,
+  Shape
 } from "./style.js";
 
 const Subscribe = () => (
@@ -28,6 +29,7 @@ const Subscribe = () => (
       <VectorSmart4 src={'vectorSmart4.png'} />
       <VectorSmart5 src={'vectorSmart5.png'} />
     </Inner>
+    <Shape src="subscribeShape.png" />
   </Wrapper>
 );
 

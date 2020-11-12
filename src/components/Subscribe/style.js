@@ -2,6 +2,16 @@ import styled from "styled-components";
 
 const Wrapper = styled.div `
   background: #fff;
+  position: relative;
+  font-size: 10px;
+
+  @media only screen and (max-width: 320px) {
+    font-size: 5px;
+  }
+
+  @media only screen and (min-width: 321px) and (max-width: 768px){
+    font-size: 6px;
+  }
 `;
 
 const Inner = styled.div `
@@ -9,37 +19,64 @@ const Inner = styled.div `
   margin-left: auto;
   margin-right: auto;
   position: relative;
+
+  @media only screen and (max-width: 1200px){
+    padding: 0 15px;
+  }
+
 `;
 
-const Title = styled.span `
-  font-size: 58.33px;
+const Title = styled.p `
+  font-size: 5.8em;
   color: #ff7f7f;
   font-weight: bold;
   text-align: center;
-  display: block;
+  margin: 0 auto;
   line-height: 1.2;
-  padding-top: 170px;
-  padding-bottom: 41.5px;
+  padding-top: 169px;
+  padding-bottom: 40.5px;
+
+  @media only screen and (max-width: 320px) {
+    padding-top: 84.5px;
+    padding-bottom: 20.25px;
+  }
+
+  @media only screen and (min-width: 321px) and (max-width: 768px){
+    padding-top: 101.4px;
+    padding-bottom: 24.3px;
+  }
 `;
 
-const Description = styled.span `
-  font-size: 29.72px;
+const Description = styled.p `
+  font-size: 3em;
   color: #ff7f7f;
   max-width: 923.9px;
   margin: 0 auto;
   text-align: center;
-  display: block;
+  margin: 0 auto;
   line-height: 1.2;
 `;
 
 const Form = styled.form `
   margin: 0 auto;
   position: relative;
-  width: 770px;
   padding-top: 73.5px;
   padding-bottom: 309px;
   max-width: 770px;
-  width: 770px;
+
+  @media only screen and (max-width: 320px) {
+    width: 280px;
+    padding-top: 36.75px;
+    padding-bottom: 84.5px;
+    width: 80%;
+  }
+
+  @media only screen and (min-width: 321px) and (max-width: 768px){
+    width: 290px;
+    padding-top: 44.1px;
+    padding-bottom: 101.4px; 
+    width: 80%;
+  }
 `;
 
 const Input = styled.input `
@@ -47,11 +84,27 @@ const Input = styled.input `
   height: 63px;
   background: #f4f4f4;
   border: 1px solid #fff;
-  border-radius: 32.14px 30.86px 30.86px 30.86px;
-  font-size: 25px;
+  border-radius: 33px;
+  font-size: 2.5em;
   color: #000;
-  padding-left: 28.76px;
+  padding-left: 29px;
   box-sizing: border-box;
+
+  @media only screen and (max-width: 320px) {
+    width: 230px;
+    height: 31.5px;
+    width: 100%;
+    border radius: 16.5px;
+    padding-left: 14.5px;
+  }
+
+  @media only screen and (min-width: 321px) and (max-width: 768px){
+    width: 240px;
+    height: 37.8px;
+    width: 100%;
+    padding-left: 17.4px;
+    border radius: 20px;
+  }
 `;
 
 const Button = styled.button `
@@ -61,7 +114,7 @@ const Button = styled.button `
   border: 1px solid #fff;
   width: 222px;
   height: 65px;
-  font-size: 25px;
+  font-size: 2.5em;
   text-transform: uppercase;
   position: absolute;
   right: 0;
@@ -70,30 +123,69 @@ const Button = styled.button `
   &:hover{
     cursor: pointer;
   }
+
+  @media only screen and (max-width: 320px) {
+    width: 100px;
+    height: 32.5px;
+  }
+
+  @media only screen and (min-width: 321px) and (max-width: 768px){
+    width: 110px;
+    height: 39px;
+  }
+  
 `;
 
 const VectorSmart2 = styled.img `
   position: absolute;
   top: 34px;
   right: 174px;
+
+  @media only screen and (max-width : 1200px) {
+		display: none;
+	}
 `;
 
 const VectorSmart3 = styled.img `
   position: absolute;
   bottom: 85px;
   left: 437px;
+  
+  @media only screen and (max-width : 1200px) {
+		display: none;
+	}
 `;
 
 const VectorSmart4 = styled.img `
   position: absolute;
   top: 91px;
   left: 73px;
+
+  @media only screen and (max-width : 1200px) {
+		display: none;
+	}
 `;
 
 const VectorSmart5 = styled.img `
   position: absolute;
   bottom: -61px;
   right: 174px;
+  z-index: 1;
+
+  @media only screen and (max-width : 1200px) {
+		display: none;
+	}
+`;
+
+const Shape = styled.img`
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+
+  @media only screen and (max-width: 768px) {
+    display:  none;
+  }
+
 `;
 
 export {
@@ -107,5 +199,6 @@ export {
   VectorSmart2,
   VectorSmart3,
   VectorSmart4,
-  VectorSmart5
+  VectorSmart5,
+  Shape
 };

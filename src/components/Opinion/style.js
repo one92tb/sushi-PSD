@@ -87,7 +87,7 @@ const ImageBox = styled.div `
   margin-right: auto;
   width: 241px;
   height: 242px;
-  padding-top: 92px;
+  padding-top: 92px; 
   padding-bottom: 53px;
 
   @media only screen and (max-width: 320px) {
