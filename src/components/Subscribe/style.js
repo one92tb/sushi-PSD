@@ -5,6 +5,7 @@ const Wrapper = styled.div `
   position: relative;
   font-size: 10px;
 
+
   @media only screen and (max-width: 320px) {
     font-size: 5px;
   }
@@ -12,6 +13,10 @@ const Wrapper = styled.div `
   @media only screen and (min-width: 321px) and (max-width: 768px){
     font-size: 6px;
   }
+
+  @media only screen and (min-width: 769px) and (max-width: 1200px) {
+    overflow: hidden;
+}
 `;
 
 const Inner = styled.div `
@@ -63,6 +68,7 @@ const Form = styled.form `
   padding-top: 73.5px;
   padding-bottom: 309px;
   max-width: 770px;
+  z-index: 1;
 
   @media only screen and (max-width: 320px) {
     width: 280px;
@@ -89,6 +95,16 @@ const Input = styled.input `
   color: #000;
   padding-left: 29px;
   box-sizing: border-box;
+  z-index: 1;
+
+  &:focus {
+    outline: none;
+    border: 2px solid #6e5dcc;
+  }
+
+  &:hover {
+    cursor: text;
+  }
 
   @media only screen and (max-width: 320px) {
     width: 230px;
@@ -140,6 +156,7 @@ const VectorSmart2 = styled.img `
   position: absolute;
   top: 34px;
   right: 174px;
+  z-index: 1;
 
   @media only screen and (max-width : 1200px) {
 		display: none;
@@ -150,6 +167,7 @@ const VectorSmart3 = styled.img `
   position: absolute;
   bottom: 85px;
   left: 437px;
+  z-index: 1;
   
   @media only screen and (max-width : 1200px) {
 		display: none;
@@ -160,6 +178,7 @@ const VectorSmart4 = styled.img `
   position: absolute;
   top: 91px;
   left: 73px;
+  z-index: 1;
 
   @media only screen and (max-width : 1200px) {
 		display: none;
@@ -177,7 +196,45 @@ const VectorSmart5 = styled.img `
 	}
 `;
 
-const Shape = styled.img`
+const Shape1 = styled.img`
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+
+  @media only screen and (max-width: 768px) {
+    display:  none;
+  }
+
+  @media only screen and (min-width: 769px) and (max-width: 1200px) {
+      left: -30px;
+      top: -40px;
+  }
+
+  @media only screen and (min-width: 2350px)  {
+    display: none;
+  }
+`;
+
+const Shape2= styled.img`
+  position: absolute;
+  top:0;
+  right:0;
+
+  @media only screen and (min-width: 769px) and (max-width: 1200px) {
+    right: -30px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    display:  none;
+  }
+
+  @media only screen and (min-width: 2350px)  {
+    display: none;
+  }
+`;
+
+const Shape3 = styled.img`
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -186,6 +243,9 @@ const Shape = styled.img`
     display:  none;
   }
 
+  @media only screen and (min-width: 2350px)  {
+    display: none;
+  }
 `;
 
 export {
@@ -200,5 +260,7 @@ export {
   VectorSmart3,
   VectorSmart4,
   VectorSmart5,
-  Shape
+  Shape1,
+  Shape2,
+  Shape3
 };
