@@ -8,6 +8,7 @@ import {
   OurOffer,
   Card,
   Image,
+  ImageBox,
   Name,
   Text,
   VectorSmart1,
@@ -50,7 +51,9 @@ const BestSeller = () => (
             <OurOffer>
               {edges.sort((a, b) => a.node.order - b.node.order).map(edge => (
                 <Card key={edge.node.image.title}>
-                  <Image src={edge.node.image.file.url}/>
+                  <ImageBox>
+                   <Image src={edge.node.image.file.url}/>
+                  </ImageBox>
                   <Name>{edge.node.name}</Name>
                   <Text>{edge.node.text}</Text>
                 </Card>

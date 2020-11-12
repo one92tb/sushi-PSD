@@ -6,8 +6,16 @@ import {
 const Wrapper = styled.div `
   color: #fff;
   line-height: 1.2;
-  background: #000;
+  background: #111111;
+  font-size: 10px;
 
+  @media only screen and (max-width: 320px){
+    font-size: 5px;
+  }
+
+  @media only screen and (min-width: 321px) and (max-width:768px){
+    font-size: 6px;
+  }
 `;
 
 const Inner = styled.div `
@@ -16,47 +24,76 @@ const Inner = styled.div `
   margin-right: auto;
   max-width: 1440px;
   justify-content: space-between;
-  padding-top: 337.5px;
-  padding-bottom: 138.5px;
-  padding-left: 93.47px;
-  padding-right: 87.5px;
+  padding: 334.5px 92px 177px 93px;
   flex-wrap: wrap;
 
-`;
+  @media only screen and (max-width: 320px){
+    padding: 167.25px 15px 88.5px 15px;
+  }
 
-const SocialMedia = styled.div `
-`;
-
-const Title = styled.span `
-  display: block;
-  font-size: 31.6px;
-  padding-bottom: 30px;
+  @media only screen and (min-width: 321px) and (max-width:768px){
+    padding: 200.7px 15px 106.2px 15px;
+  }
 
 `;
 
-const Description = styled.span `
-  font-size: 23.7px;
-  max-width: 462.97px;
-  display: block;
+const SocialMedia = styled.div `  
+  max-width: 458px;
+  margin-bottom: 30px;
+  margin-right: 20px;
 
+
+  @media only screen and (max-width:768px){
+    margin-left: auto;
+    margin-right: auto;
+  }
+`;
+
+const Title = styled.p `
+  margin: 0;
+  font-size: 3.2em;
+  padding-bottom: 29.5px;
+
+  @media only screen and (max-width:768px){
+    text-align: center;
+  }
+`;
+
+const Description = styled.p `
+  font-size: 2.4em;
+  width: 480px;
+  margin: 0;
+
+  @media only screen and (max-width:768px){
+    width: 100%;
+    text-align: center;
+  }
 `;
 
 const Card = styled.div `
-  padding-bottom: 50px;
+  margin-bottom: 30px;
 `;
 
 const Information = styled.div `
   display: flex;
-  width: 633.63px;
+  width: 629px;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @media only screen and (max-width:768px){
+    justify-content: space-around;
+  }
 
 `;
 
 const Panel = styled.div `
   display: flex;
-  padding-top: 30px;
-  padding-bottom: 50px;
+  padding-top: 33px;
+  padding-bottom: 4px;
+
+  @media only screen and (max-width:768px){
+    justify-content: center;
+  }
 `;
 
 const IconBox = styled.div `
@@ -67,30 +104,42 @@ const IconBox = styled.div `
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 25px;
+  font-size: 2.5em;
   margin-right: 16px;
 `;
 
-const Icon = styled(FontAwesomeIcon)
-`
+const Icon = styled(FontAwesomeIcon)`
   color: #000;
-`;
 
+  &:hover {
+    color: #ff7f7f;
+    cursor: pointer;
+  }
+`;
 
 const Nav = styled.ul `
     padding: 0;
     margin: 0;
-    height: 184px;
+    height: 190px;
+
+    @media only screen and (max-width:768px){
+      text-align: center;
+    }
 `;
 
 const NavItem = styled.li `
   list-style-type: none;
-  padding-bottom: 12px;
+  padding-bottom: 11.25px;
 
 `;
 
 const NavLink = styled.a `
-  font-size: 23.7px;
+  font-size: 2.4em;
+
+  &:hover {
+    color: yellow;
+    cursor: pointer;
+  }
 `;
 
 

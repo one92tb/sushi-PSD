@@ -4,6 +4,7 @@ import {
   Wrapper,
   Inner,
   Image,
+  ImageBox,
   Card,
   Title,
   Description,
@@ -33,7 +34,9 @@ const BestTasty = () => (
       return (
         <Wrapper>
           <Inner>
-            <Image src={data.contentfulBestTasty.image.file.url} />
+            <ImageBox>
+              <Image src={data.contentfulBestTasty.image.file.url} />
+            </ImageBox>
             <Card>
               <Title>{data.contentfulBestTasty.title}</Title>
               <Description>{data.contentfulBestTasty.description}</Description>

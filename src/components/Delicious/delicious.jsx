@@ -4,6 +4,7 @@ import {
   Wrapper,
   Inner,
   Image,
+  ImageBox,
   Card,
   Title,
   Description,
@@ -42,7 +43,9 @@ const Delicious = () => (
               <Description>{data.contentfulDelicious.description}</Description>
               <Button>order now</Button>
             </Card>
-            <Image src={data.contentfulDelicious.image.file.url} />
+            <ImageBox>
+             <Image src={data.contentfulDelicious.image.file.url} />
+            </ImageBox>
             <VectorSmart1 src={'vectorSmart1.png'} />
             <VectorSmart2 src={'vectorSmart2.png'} />
             <VectorSmart5 src={'vectorSmart5.png'} />

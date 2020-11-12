@@ -32,13 +32,18 @@ const Inner = styled.div `
   @media only screen and (min-width: 321px) and (max-width: 768px) {
     padding: 66px 15px 84.8px 15px;
   }
-
-
 `;
 
 const Image = styled.img `
+  width: 100%;
+  height: 100%;
+`;
+
+const ImageBox = styled.div `
   width: 475px;
   height: 482px;
+  border-radius: 50%;
+  overflow: hidden;
 
   @media only screen and (max-width: 320px) {
     width: 237.5px;
@@ -52,6 +57,7 @@ const Image = styled.img `
     margin: 0 auto;
   }
 `;
+
 
 const Card = styled.div `
   @media only screen and (max-width: 768px) {
@@ -112,10 +118,12 @@ const Button = styled.button `
   color: #fff;
   background: #ff7f7f;
   display: block;
+  z-index: 2;
+
 
   &:hover {
     cursor: pointer;
-    background: red;
+    color: yellow;
   }
 
   @media only screen and (max-width: 320px) {
@@ -164,6 +172,7 @@ export {
   Wrapper,
   Inner,
   Image,
+  ImageBox,
   Card,
   Title,
   Description,

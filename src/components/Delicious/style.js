@@ -28,8 +28,15 @@ const Inner = styled.div `
 `;
 
 const Image = styled.img `
+  width: 100%;
+  height: 100%;
+`;
+
+const ImageBox = styled.div`
   width: 465px;
   height: 464px;
+  border-radius: 50%;
+  overflow: hidden;
 
   @media only screen and (max-width: 320px) {
     width: 232.5px;
@@ -41,6 +48,7 @@ const Image = styled.img `
     height: 278.4px;
   }
 `;
+
 
 const Card = styled.div ``;
 
@@ -163,6 +171,7 @@ export {
   Wrapper,
   Inner,
   Image,
+  ImageBox,
   Card,
   Title,
   Description,

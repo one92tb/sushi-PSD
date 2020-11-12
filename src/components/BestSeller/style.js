@@ -87,11 +87,18 @@ const Card = styled.div `
 `;
 
 const Image = styled.img `
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	width: 100%;
+	heigth: 100%;
+`;
+
+const ImageBox = styled.div `
 	width:213px;
 	height: 213px; 
+	border-radius: 50%;
+	overflow: hidden;
+	background: yellow;
+	margin-left: auto;
+	margin-right: auto;
 
 	@media only screen and (max-width: 320px) {
 		width: 106.5px;
@@ -159,6 +166,7 @@ export {
 	OurOffer,
 	Card,
 	Image,
+	ImageBox,
 	Name,
 	Text,
 	VectorSmart1,

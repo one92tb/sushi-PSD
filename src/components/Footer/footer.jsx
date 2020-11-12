@@ -27,7 +27,7 @@ const Footer = () => (
       <SocialMedia>
         <Title>Title Here</Title>
         <Description>
-          Lorem ipsum dolor sit amet, consecte&#173;tur adipiscing elit. Aliquam at dignissim nunc, id maximus ex. Etiam nec dignissim elit, at dignissim enim.
+          Lorem ipsum dolor sit amet, consecte&#173;tur adipiscing elit. Aliquam at dignissim nunc, id maximus ex. Etiam nec dignis&#173;sim elit, at dignissim enim.
         </Description>
         <Panel>
           <IconBox>
