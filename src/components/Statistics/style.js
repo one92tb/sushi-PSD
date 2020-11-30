@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Wrapper = styled.div `
+const Wrapper = styled.section `
   background: #ff7f7f;
   line-height: 1.2;
   font-size: 10px;
@@ -29,7 +29,7 @@ const Inner = styled.div `
 	}
 `;
 
-const Title = styled.p `
+const Title = styled.h1 `
   margin: 0;
   font-size: 5.8em;
   color: #fff;

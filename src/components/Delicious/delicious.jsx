@@ -5,7 +5,7 @@ import {
   Inner,
   Image,
   ImageBox,
-  Card,
+  Article,
   Title,
   Description,
   Button,
@@ -38,11 +38,11 @@ const Delicious = () => (
       return (
         <Wrapper>
           <Inner>
-            <Card>
+            <Article>
               <Title>{data.contentfulDelicious.title}</Title>
               <Description>{data.contentfulDelicious.description}</Description>
               <Button>order now</Button>
-            </Card>
+            </Article>
             <ImageBox>
              <Image src={data.contentfulDelicious.image.file.url} />
             </ImageBox>

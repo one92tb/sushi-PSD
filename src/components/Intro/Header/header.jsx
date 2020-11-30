@@ -17,7 +17,7 @@ import {
 
 const Header = () => {
     const [isChecked, setChecked] = useState(false);
-    console.log(isChecked);
+
     return (
         <Wrapper isChecked={isChecked}>
             <Inner>

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Wrapper = styled.div `
+const Wrapper = styled.section `
   background:#fff;
   font-size: 10px;
 
@@ -51,12 +51,11 @@ const ImageBox = styled.div`
 `;
 
 
-const Card = styled.div ``;
+const Article = styled.article ``;
 
-const Title = styled.p `
+const Title = styled.h1 `
   margin: 0;
   font-size: 5.8em;
-  font-weight: bold;
   color: #ff7f7f;
   text-transform: uppercase;
   padding-top: 57px;
@@ -110,6 +109,7 @@ const Button = styled.button `
 
   &:hover {
     cursor: pointer;
+    color: #FFFF00;
   }
 
   @media only screen and (max-width: 320px) {
@@ -173,7 +173,7 @@ export {
   Inner,
   Image,
   ImageBox,
-  Card,
+  Article,
   Title,
   Description,
   Button,

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Wrapper = styled.div `
+const Wrapper = styled.section `
   background-image: url('opinionBG.png');
   background-position: center;
   background-repeat: no-repeat;

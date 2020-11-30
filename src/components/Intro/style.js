@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Wrapper = styled.div `
+const Wrapper = styled.section `
   background-image: url('intro_background.jpeg');
   background-position: center;
   background-repeat: no-repeat;
@@ -48,7 +48,7 @@ const Shape = styled.div `
   }
 `;
 
-const Inner = styled.div `
+const Inner = styled.article `
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
@@ -92,7 +92,7 @@ const Jumbotron = styled.div `
   }
 `;
 
-const Title = styled.p `
+const Title = styled.h1 `
   font-size: 3em;
   color:#fff;
   text-transform: uppercase;
@@ -100,8 +100,6 @@ const Title = styled.p `
   display: block;
   position: relative;
   margin: 0;
-
-
 `;
 
 const BodyText = styled.p `

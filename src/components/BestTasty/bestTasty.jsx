@@ -5,7 +5,7 @@ import {
   Inner,
   Image,
   ImageBox,
-  Card,
+  Article,
   Title,
   Description,
   Button,
@@ -37,11 +37,11 @@ const BestTasty = () => (
             <ImageBox>
               <Image src={data.contentfulBestTasty.image.file.url} />
             </ImageBox>
-            <Card>
+            <Article>
               <Title>{data.contentfulBestTasty.title}</Title>
               <Description>{data.contentfulBestTasty.description}</Description>
               <Button>order now</Button>
-            </Card>
+            </Article>
           </Inner>
           <Shape src="bestTastyShape.png"/>
         </Wrapper >

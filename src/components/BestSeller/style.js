@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Wrapper = styled.div `
+const Wrapper = styled.section `
 	background: #ff7f7f;
 	color: #fff;
 	width: 100%;
@@ -28,7 +28,7 @@ const Inner = styled.div `
 	}
 `;
 
-const Title = styled.p `
+const Title = styled.h1 `
 	 text-align: center;
 	 font-size: 5.8em;
 	 font-weight: bold;

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Wrapper = styled.div `
+const Wrapper = styled.section `
   background: #fff;
   position: relative;
   font-size: 10px;
@@ -31,10 +31,9 @@ const Inner = styled.div `
 
 `;
 
-const Title = styled.p `
+const Title = styled.h1 `
   font-size: 5.8em;
   color: #ff7f7f;
-  font-weight: bold;
   text-align: center;
   margin: 0 auto;
   line-height: 1.2;
@@ -138,6 +137,7 @@ const Button = styled.button `
 
   &:hover{
     cursor: pointer;
+    color: #FFFF00;
   }
 
   @media only screen and (max-width: 320px) {

@@ -2,7 +2,7 @@ import styled, {
   css
 } from "styled-components";
 
-const Wrapper = styled.div `
+const Wrapper = styled.header `
   height: 99px;
   color: #fff;
   display: flex;
@@ -116,6 +116,7 @@ const NavLink = styled.a `
 
   &:hover {
     cursor: pointer;
+    color: #FFFF00;
   }
 `;
 

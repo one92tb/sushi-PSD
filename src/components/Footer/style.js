@@ -3,7 +3,7 @@ import {
   FontAwesomeIcon
 } from '@fortawesome/react-fontawesome';
 
-const Wrapper = styled.div `
+const Wrapper = styled.footer `
   color: #fff;
   line-height: 1.2;
   background: #111111;
@@ -37,7 +37,7 @@ const Inner = styled.div `
 
 `;
 
-const SocialMedia = styled.div `  
+const Article = styled.article `  
   max-width: 458px;
   margin-bottom: 30px;
   margin-right: 20px;
@@ -146,7 +146,7 @@ const NavLink = styled.a `
 export {
   Wrapper,
   Inner,
-  SocialMedia,
+  Article,
   Title,
   Description,
   Panel,

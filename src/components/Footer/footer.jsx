@@ -2,7 +2,7 @@ import React from "react";
 import {
   Wrapper,
   Inner,
-  SocialMedia,
+  Article,
   Title,
   Description,
   Panel,
@@ -24,7 +24,7 @@ import {
 const Footer = () => (
   <Wrapper>
     <Inner>
-      <SocialMedia>
+      <Article>
         <Title>Title Here</Title>
         <Description>
           Lorem ipsum dolor sit amet, consecte&#173;tur adipiscing elit. Aliquam at dignissim nunc, id maximus ex. Etiam nec dignis&#173;sim elit, at dignissim enim.
@@ -43,7 +43,7 @@ const Footer = () => (
             <Icon icon={faWhatsapp} />
           </IconBox>
         </Panel>
-      </SocialMedia>
+      </Article>
       <Information>
         <Card>
           <Title>About</Title>
