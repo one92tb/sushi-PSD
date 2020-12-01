@@ -33,7 +33,7 @@ const Shape = styled.div `
   position: absolute;
   top:0;
   left:0;
-  z-index: 0;
+
   transition: height 1s;
   -webkit-mask-repeat: no-repeat;
 

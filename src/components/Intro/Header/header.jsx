@@ -1,4 +1,5 @@
-import React, { useState }  from "react";
+import React, { useState, useEffect } from "react";
+import { faArrowUp, faSearch } from '@fortawesome/free-solid-svg-icons';
 import {
     Wrapper,
     Inner,
@@ -12,11 +13,42 @@ import {
     Nav,
     NavItem,
     NavLink,
-    SearchIcon
+    SearchIcon,
+    ScrollBackButton,
+    ScrollBackIcon
 } from "./style.js";
 
-const Header = () => {
+
+const Header = (props) => {
+    const { refs } = props;
+
     const [isChecked, setChecked] = useState(false);
+    const [scrollBtnAppear, setScrollBtnAppear] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            (window.scrollY !== 0) ? setScrollBtnAppear(true) : setScrollBtnAppear(false)
+        }
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, [scrollBtnAppear])
+
+    const scrollToComponent = ref => {
+        window.scrollTo({
+            top: ref.current.offsetTop,
+            behavior: 'smooth',
+        });
+        setChecked(false);
+    };
+
+    const backToIntroComponent = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    };
 
     return (
         <Wrapper isChecked={isChecked}>
@@ -32,23 +64,26 @@ const Header = () => {
                 <Input type="checkbox" id="toggle" />
                 <Nav isChecked={isChecked} >
                     <NavItem>
-                        <NavLink>home</NavLink>
+                        <NavLink href="#" onClick={() => scrollToComponent(refs.introRef)}>home</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink>product</NavLink>
+                        <NavLink href="#" onClick={() => scrollToComponent(refs.bestSellerRef)}>product</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink>promo</NavLink>
+                        <NavLink href="#" onClick={() => scrollToComponent(refs.deliciousRef)}>promo</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink>about</NavLink>
+                        <NavLink href="#" onClick={() => scrollToComponent(refs.opinionRef)}>about</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink>contact</NavLink>
+                        <NavLink href="#"  onClick={() => scrollToComponent(refs.footerRef)}>contact</NavLink>
                     </NavItem>
                 </Nav>
-                <SearchIcon src={'search.png'} width={25} height={25} />
+                <SearchIcon icon={faSearch}/>
             </Inner>
+            <ScrollBackButton appear={scrollBtnAppear} onClick={backToIntroComponent}>
+              <ScrollBackIcon icon={faArrowUp}  />
+            </ScrollBackButton>
         </Wrapper>
     );
 }

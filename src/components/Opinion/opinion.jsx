@@ -9,7 +9,7 @@ import {
   ImageBox
 } from "./style.js"
 
-const Opinion = () => (
+const Opinion = React.forwardRef((props, ref) => (
   <StaticQuery
     query={graphql`
       {
@@ -30,7 +30,7 @@ const Opinion = () => (
     `}
     render={data => {
       return (
-        <Wrapper>
+        <Wrapper ref={ref}>
           <Inner>
             <ImageBox>
               <Image src={data.contentfulOpinion.image.file.url} />
@@ -42,6 +42,6 @@ const Opinion = () => (
       );
     }}
   />
-);
+));
 
 export default Opinion;

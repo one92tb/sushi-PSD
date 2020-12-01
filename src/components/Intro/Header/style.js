@@ -1,6 +1,5 @@
-import styled, {
-  css
-} from "styled-components";
+import styled, { css } from "styled-components";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Wrapper = styled.header `
   height: 99px;
@@ -10,8 +9,8 @@ const Wrapper = styled.header `
   position absolute;
   background-color: rgba(255, 127, 127, 0.75);
   width: 100%;
-  padding: 15px 0;
   z-index: 1;
+  padding: 15px 0;
   transition: background-color 1s;
 
 
@@ -92,7 +91,7 @@ const Nav = styled.ul `
     position: absolute;
     background: #ff7f7f;;
     top: 129px;
-    z-index: 5;
+    z-index: 2;
     flex-direction: column;
     text-align: center;
     padding: 0;
@@ -100,7 +99,7 @@ const Nav = styled.ul `
     max-height: ${props => props.isChecked ? "435px" : "0"};
   }
 
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 768px) {
     top: 107.39px;
   }
 `;
@@ -113,13 +112,19 @@ const NavItem = styled.li `
 const NavLink = styled.a `
   text-transform: uppercase;
   font-size: 1em;
+  color: #fff;
+  text-decoration: none;
 
   &:hover {
     cursor: pointer;
   }
+
+  @media all and (max-width: 1200px) {
+      font-size: 1.2em;
+  }
 `;
 
-const SearchIcon = styled.img `
+const SearchIcon = styled(FontAwesomeIcon) `
 
   @media only screen and (max-width: 1200px) {
     display: none;
@@ -166,6 +171,68 @@ const Label = styled.label `
   }
 `
 
+const ScrollBackButton = styled.button`
+  width: 120px;
+  height: 120px;
+  padding: 0;
+  border: 10px solid #999;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  z-index: ${props => props.appear ? "1" : "-1"};
+  opacity: ${props => props.appear ? "0.5" : "0"};
+  transition: all 1s ease;
+
+  @media only screen and (max-width: 320px) {
+    height: 45px;
+    width: 45px;
+    bottom: 5px;
+    right: 5px;
+    border: 4px solid #999;
+  };
+
+  @media only screen and (min-width:321px) and (max-width: 768px) {
+    height: 60px;
+    width: 60px;
+    bottom: 10px;
+    right: 10px;
+    border: 6px solid #999;
+  };
+
+  @media all and (min-width: 769px) and (max-width: 1200px) {
+    height: 96px;
+    width: 96px;
+    bottom: 15px;
+    right: 15px;
+    border: 8px solid #999;
+  }
+
+  &:hover {
+    cursor: ${props => props.appear ? "pointer" : "default"};
+  }
+
+`;
+
+const ScrollBackIcon = styled(FontAwesomeIcon)`
+  color: #999;
+  font-size: 60px;
+
+  @media only screen and (max-width: 320px) {
+    font-size: 24px;
+  };
+
+  @media only screen and (min-width:321px) and (max-width: 768px) {
+    font-size: 30px;
+  };
+
+  @media all and (min-width: 769px) and (max-width: 1200px) {
+    font-size: 48px;
+  }
+`;
+
 export {
   Wrapper,
   Inner,
@@ -179,5 +246,7 @@ export {
   Nav,
   NavItem,
   NavLink,
-  SearchIcon
+  SearchIcon,
+  ScrollBackButton,
+  ScrollBackIcon
 }

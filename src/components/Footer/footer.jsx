@@ -18,11 +18,11 @@ import {
   faInstagram,
   faFacebookF,
   faTwitter,
-  faWhatsapp
+  faWhatsapp,
 } from '@fortawesome/free-brands-svg-icons';
 
-const Footer = () => (
-  <Wrapper>
+const Footer = React.forwardRef((props, ref) => (
+  <Wrapper ref={ref}>
     <Inner>
       <Article>
         <Title>Title Here</Title>
@@ -102,6 +102,6 @@ const Footer = () => (
       </Information>
     </Inner>
   </Wrapper>
-);
+));
 
 export default Footer;

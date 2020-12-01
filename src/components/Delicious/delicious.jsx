@@ -15,7 +15,7 @@ import {
   VectorSmart6
 } from './style.js';
 
-const Delicious = () => (
+const Delicious = React.forwardRef((props, ref) => (
   <StaticQuery
     query={graphql`
       {
@@ -36,7 +36,7 @@ const Delicious = () => (
     `}
     render={data => {
       return (
-        <Wrapper>
+        <Wrapper ref={ref}>
           <Inner>
             <Article>
               <Title>{data.contentfulDelicious.title}</Title>
@@ -55,6 +55,6 @@ const Delicious = () => (
       );
     }}
   ></StaticQuery>
-)
+));
 
 export default Delicious;

@@ -15,7 +15,7 @@ import {
   VectorSmart2
 } from "./style.js";
 
-const BestSeller = () => (
+const BestSeller = React.forwardRef((props, ref) => (
   <StaticQuery
     query={graphql`
       {
@@ -42,7 +42,7 @@ const BestSeller = () => (
     render={data => {
       const { edges } = data.allContentfulBestSeller;
       return (
-        <Wrapper>
+        <Wrapper ref={ref}>
           <Inner>
             <Title>best seller</Title>
             <Description>
@@ -66,9 +66,6 @@ const BestSeller = () => (
       );
     }}
   />
-)
-
-
-
+));
 
 export default BestSeller;

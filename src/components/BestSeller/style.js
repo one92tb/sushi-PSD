@@ -96,7 +96,7 @@ const ImageBox = styled.div `
 	height: 213px; 
 	border-radius: 50%;
 	overflow: hidden;
-	background: yellow;
+	background: #999;
 	margin-left: auto;
 	margin-right: auto;
 

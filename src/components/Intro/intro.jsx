@@ -11,9 +11,9 @@ import {
 } from "./style.js";
 
 
-const Intro = () => (
-	<Wrapper>
-		<Header />
+const Intro = React.forwardRef((props, ref) => (
+	<Wrapper ref={ref}>
+		<Header refs={props.refs} />
 		<Inner>
 			<Shape />
 			<Jumbotron>
@@ -25,6 +25,6 @@ const Intro = () => (
 			</Jumbotron>
 		</Inner>
 	</Wrapper>
-);
+));
 
 export default Intro;
