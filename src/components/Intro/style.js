@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Wrapper = styled.section `
-  background-image: url('intro_background.jpeg');
+  background-image: url('intro_background.webp');
   background-position: center;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -38,12 +38,12 @@ const Shape = styled.div `
   -webkit-mask-repeat: no-repeat;
 
   @media only screen and (max-width : 768px) {
-    background: url('shape_BIG.jpeg');
+    background: url('shape_BIG.webp');
     background-position: center;
   }
 
   @media only screen and (min-width: 2350px) {
-    background: url('shape_BIG.jpeg') no-repeat;
+    background: url('shape_BIG.webp') no-repeat;
     background-size: cover;
   }
 `;

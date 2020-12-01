@@ -137,8 +137,8 @@ const NavLink = styled.a `
   font-size: 2.4em;
 
   &:hover {
-    color: yellow;
     cursor: pointer;
+    color: #ff7f7f;
   }
 `;
 

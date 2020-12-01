@@ -7,11 +7,11 @@ const Wrapper = styled.section `
 	font-size: 10px;
 
 	@media only screen and (max-width : 320px) {
-		font-size: 5px;
+		font-size: 6px;
 	}
 
 	@media only screen and (min-width: 321px) and (max-width : 768px) {
-		font-size: 6px;
+		font-size: 7px;
 	}
 `;
 
