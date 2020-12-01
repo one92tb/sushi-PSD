@@ -129,9 +129,13 @@ const Button = styled.button `
   font-weight: 700;
   position: relative;
   pointer-events: auto;
+  transition: all 0.23s;
+  backface-visibility: hidden;
 
   &:hover {
     cursor: pointer;
+    transform: scale(1.02);
+    box-shadow: -2px 2px 9px -2px #000;
   }
 
   @media only screen and (max-width : 320px){

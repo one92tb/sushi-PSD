@@ -126,7 +126,7 @@ const Button = styled.button `
   border-radius: 32.5px;
   background: #ff7f7f;
   color: #fff;
-  border: 1px solid #fff;
+  border: 1px solid #ff7f7f;
   width: 222px;
   height: 65px;
   font-size: 2.5em;
@@ -134,10 +134,13 @@ const Button = styled.button `
   position: absolute;
   right: 0;
   box-sizing: border-box;
+  transition: all 0.23s;
+  backface-visibility: hidden;
 
   &:hover{
     cursor: pointer;
-    color: #FFFF00;
+    transform: scale(1.02);
+    box-shadow: -2px 2px 9px -2px #000;
   }
 
   @media only screen and (max-width: 320px) {

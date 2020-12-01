@@ -28,7 +28,7 @@ const Wrapper = styled.header `
   };
 `;
 
-const Inner = styled.div `
+const Inner = styled.nav `
  max-width: 1440px;
  padding: 0 56px;
  width: 100%;
@@ -116,7 +116,6 @@ const NavLink = styled.a `
 
   &:hover {
     cursor: pointer;
-    color: #FFFF00;
   }
 `;
 
