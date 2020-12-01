@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Wrapper = styled.section `
-  background-image: url('opinionBG.png');
+  background-image: url('opinionBG.webp');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
