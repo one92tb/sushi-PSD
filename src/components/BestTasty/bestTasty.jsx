@@ -35,7 +35,7 @@ const BestTasty = () => (
         <Wrapper>
           <Inner>
             <ImageBox>
-              <Image src={data.contentfulBestTasty.image.file.url} />
+              <Image src={data.contentfulBestTasty.image.file.url} alt="best dish" />
             </ImageBox>
             <Article>
               <Title>{data.contentfulBestTasty.title}</Title>

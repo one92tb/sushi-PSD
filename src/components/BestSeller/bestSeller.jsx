@@ -52,7 +52,7 @@ const BestSeller = React.forwardRef((props, ref) => (
               {edges.sort((a, b) => a.node.order - b.node.order).map(edge => (
                 <Card key={edge.node.image.title}>
                   <ImageBox>
-                   <Image src={edge.node.image.file.url}/>
+                   <Image src={edge.node.image.file.url} alt={`dish ${edge.node.order}`}/>
                   </ImageBox>
                   <Name>{edge.node.name}</Name>
                   <Text>{edge.node.text}</Text>

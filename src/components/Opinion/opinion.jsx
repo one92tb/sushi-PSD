@@ -33,7 +33,7 @@ const Opinion = React.forwardRef((props, ref) => (
         <Wrapper ref={ref}>
           <Inner>
             <ImageBox>
-              <Image src={data.contentfulOpinion.image.file.url} />
+              <Image src={data.contentfulOpinion.image.file.url} alt="customer" />
             </ImageBox>
             <Description>{data.contentfulOpinion.description}</Description>
             <Name>{data.contentfulOpinion.name}</Name>

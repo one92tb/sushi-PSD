@@ -54,7 +54,7 @@ const Header = (props) => {
         <Wrapper isChecked={isChecked}>
             <Inner>
                 <Logo>
-                    <Image src={'sushi_icon.png'} />
+                    <Image src={'sushi_icon.png'} alt="logo" />
                 </Logo>
                 <Label htmlFor="toggle" onClick={() => setChecked(!isChecked)} >
                     <ToggleOne isChecked={isChecked} />

@@ -44,7 +44,7 @@ const Delicious = React.forwardRef((props, ref) => (
               <Button>order now</Button>
             </Article>
             <ImageBox>
-             <Image src={data.contentfulDelicious.image.file.url} />
+             <Image src={data.contentfulDelicious.image.file.url} alt="delicious dish" />
             </ImageBox>
             <VectorSmart1 src={'vectorSmart1.png'} />
             <VectorSmart2 src={'vectorSmart2.png'} />

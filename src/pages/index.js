@@ -16,7 +16,6 @@ const Container = styled.div`
   width: 100%;
   margin: 0;
 `
-
 const Home = () => {
   const refs = {
     introRef: useRef(null),
