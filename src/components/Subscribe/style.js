@@ -137,6 +137,11 @@ const Button = styled.button `
   transition: all 0.23s;
   backface-visibility: hidden;
 
+  &:focus{
+    border: none;
+    outline: none;
+  }
+
   &:hover{
     cursor: pointer;
     transform: scale(1.02);

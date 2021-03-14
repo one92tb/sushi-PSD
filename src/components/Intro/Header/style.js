@@ -185,6 +185,14 @@ const ScrollBackButton = styled.button`
   z-index: ${props => props.appear ? "1" : "-1"};
   opacity: ${props => props.appear ? "0.5" : "0"};
   transition: all 1s ease;
+  
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    cursor: ${props => props.appear ? "pointer" : "default"};
+  }
 
   @media only screen and (max-width: 320px) {
     height: 45px;
@@ -209,11 +217,6 @@ const ScrollBackButton = styled.button`
     right: 15px;
     border: 8px solid #999;
   }
-
-  &:hover {
-    cursor: ${props => props.appear ? "pointer" : "default"};
-  }
-
 `;
 
 const ScrollBackIcon = styled(FontAwesomeIcon)`

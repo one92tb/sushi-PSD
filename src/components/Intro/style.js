@@ -138,6 +138,11 @@ const Button = styled.button `
     box-shadow: -2px 2px 9px -2px #000;
   }
 
+  &:focus {
+    border: none;
+    outline: none;
+  }
+
   @media only screen and (max-width : 320px){
     width: 166px;
     height: 32.5px;
