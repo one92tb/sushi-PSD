@@ -72,6 +72,14 @@ const Description = styled.p `
 
 const Card = styled.div `
   margin-bottom: 30px;
+
+  @media only screen and (max-width: 320px) {
+
+  }
+
+  @media only screen and (min-width: 321px) and (max-width: 768px){
+
+  }
 `;
 
 const Information = styled.div `
